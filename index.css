@@ -1,0 +1,60 @@
+#body section{padding: 0 8px; }
+#body section > article{width: 100%; margin-bottom: 60px; }
+#body section > article img{max-width: 100%; }
+#body section > article h3{font-size: 24px; }
+#body section > article h4{font-size: 36px; margin-bottom: 18px; }
+#body section > article h5{font-size: 18px; margin-bottom: 18px; }
+#body section > article p{font-size: 14px; margin-bottom: 24px; }
+
+#body section > .article2 > div{text-align: center; }
+#body section > .article2 > div > *{display: inline-block; vertical-align: middle; }
+#body section > .article2 > div > div{text-align: center; border: 4px solid #fff; border-radius: 50%; width: 140px; height: 140px; display: inline-table; }
+#body section > .article2 > div > div > div{display: table-cell; vertical-align: middle; }
+#body section > .article2 > div > div > div > h4{margin: 0; }
+#body section > .article2 > div > div > div > h5{margin: 0; }
+#body section > .article2 > div > span{position: relative; width: 16px; height: 16px; margin: 0 8px; }
+#body section > .article2 > div > span:before{content: ''; width: 16px; height: 4px; background-color: #fff; display: block; position: absolute; left: 0; top: 6px; }
+#body section > .article2 > div > span:after{content: ''; width: 4px; height: 16px; background-color: #fff; display: block; position: absolute; left: 6px; top: 0; }
+
+#body section > .article3{position: relative; }
+#body section > .article3 > img{position: absolute; opacity: .25; right: -5%; bottom: -40px; width: 200px; }
+
+@media all and (min-width: 360px){
+    #body section{padding: 0 12px; }
+    
+    #body section > .article2 > div > span{margin: 0 12px; }
+}
+
+@media all and (min-width: 768px){
+    #body section{padding: 0 32px; }
+    #body section > article {margin-bottom: 240px; }
+    #body section > article h3{font-size: 36px; }
+    #body section > article h4{font-size: 40px; margin-bottom: 32px; }
+    #body section > article h5{font-size: 21px; margin-bottom: 32px; }
+    #body section > article p{font-size: 18px; }
+    
+    #body section > .article1{position: relative; }
+    #body section > .article1 > img{width: 48.5%; margin-left: 17.1%; }
+    #body section > .article1 > div{width: 48.5%; position: absolute; bottom: 5%; left: 51.3%; }
+    
+    #body section > .article2 > div{}
+    #body section > .article2 > div > div{width: 246px; height: 246px; border: 6px solid #fff; }
+    #body section > .article2 > div > div > div{}
+    #body section > .article2 > div > div > div > h4{}
+    #body section > .article2 > div > div > div > h5{}
+    #body section > .article2 > div > span{width: 24px; height: 24px; margin: 0 80px; }
+    #body section > .article2 > div > span:before{width: 24px; height: 4px; left: 0; top: 10px; }
+    #body section > .article2 > div > span:after{width: 4px; height: 24px; left: 10px; top: 0; }
+}
+
+@media all and (min-width: 1280px){
+    #body section{padding: 0; }
+    #body section > .article1 > img{width: 49.375%;}
+    #body section > .article1 > div{width: 28%; right: 8.4375%; }
+    
+    #body section > .article2 > div > div{width: 246px; height: 246px; }
+    #body section > .article2 > div > div > div{}
+    #body section > .article2 > div > div > div > h4{}
+    #body section > .article2 > div > div > div > h5{}
+    #body section > .article2 > div > span{margin: 0 120px; }
+}

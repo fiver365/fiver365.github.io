@@ -1,0 +1,39 @@
+html, body{width: 100%; }
+#body{width: 100%; height: 100%; background-color: #151515; overflow: hidden; }
+#body *{color: #fff; box-sizing: border-box; line-height: 1.5; }
+
+.hideSpan{width: 0; height: 0; display: inline-block; overflow: hidden; }#body header{margin: 0 auto; }
+#body header > div{padding-top: 12px; margin-bottom: 80px;}
+#body header > div > h1{margin: 0 auto 40px; }
+#body header > div > h1 > a{color: #fff; display: block; text-align: center; font-size: 60px; }
+#body header > div > ul{text-align: center; }
+#body header > div > ul > li{display: inline-block; margin: 0 8px;}
+#body header > div > ul > li > a{display: block; opacity: .2; }
+#body header > div > ul > li.on > a{opacity: 1; font-weight: bold; }
+#body header > aside{padding: 0 8px; }
+#body header > aside > h2{text-align: center; }
+#body header > aside > h2 > img{min-width: 234px; width: 50%; }
+#body header > aside > h6{color: #CECECE; text-align: center; font-size: 12px; word-break: keep-all; }
+
+@media all and (min-width: 360px){
+    #body header > aside{padding: 0 12px; }
+    #body header > aside > h2 > img{width: 60%; }
+}
+
+@media all and (min-width: 768px){
+    #body header{max-width: 768px; }
+    #body header > div{padding-top: 12px; margin-bottom: 160px;}
+    #body header > div > h1{margin: 0 auto 60px; }
+    #body header > div > ul > li{margin: 0 40px;}
+    #body header > aside{padding: 0 32px; }
+    #body header > aside > h2 > img{width: auto; }
+    #body header > aside > h6{font-size: 16px; }
+}
+
+@media all and (min-width: 1280px){
+    #body header{max-width: 1280px; }
+    #body header > div{padding-top: 12px; margin-bottom: 240px;}
+    #body header > div > h1{margin: 0 auto 80px; }
+    #body header > div > ul > li{margin: 0 60px;}
+    #body header > aside{padding: 0; }
+}
