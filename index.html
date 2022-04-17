@@ -39,18 +39,20 @@
             }
             var scPage = rtnval + '.html';
             document.getElementById('content').setAttribute('include-html', scPage);
-            console.log(parameters);
+
+            includeHTML();
             console.log(varName);
             console.log(rtnval);
             return rtnval;  
         }  
     }  
     var request = new Request();  
-    includeHTML();
+    //includeHTML();
+    var test = document.querySelector('#menu');
+    console.log(test);
 </script>  
   
 <script>  
     var paramValue = request.getParameter('page');
-    console.log(paramValue);
 </script>
 </html>
