@@ -25,7 +25,21 @@ body{overflow-x: hidden; }
 .bg2{top: 20%; left: 5%; }
 .bg3{top: 45%; left: 45%; }
 .bg4{top: 65%; left: 15%; }
-.bg5{top: 80%; right: 15%; }
+.bg5{bottom: 4%; right: 15%; }
+
+
+/* 푸터 */
+#body footer{background-color: #2b2b2b; width: 100%; padding: 40px 0; }
+#body footer > div{max-width: 1280px; margin: 0 auto; text-align: center; }
+#body footer > div > h4{}
+#body footer > div > h4 > a{font-size: 36px; color: #fff; }
+#body footer > div > ul{text-align: center; margin: 20px auto; }
+#body footer > div > ul > li{display: inline-block; margin: 0 18px; }
+#body footer > div > ul > li > a{width: 40px; height: 40px; background-color: #fff; display: block; }
+#body footer > div > ul > li > a > img{}
+#body footer > div > p{font-size: 14px; color: #ccc; }
+#body footer > div > span{font-size: 12px; color: #595959; }
+
 @media all and (min-width: 360px){
     #body header{margin: 0 auto 120px; }
     #body header > div{margin-bottom: 80px; }
@@ -34,6 +48,9 @@ body{overflow-x: hidden; }
     #body header > aside > h2 > img{width: 60%; }
     
     .alphabetBg > span{font-size: 400px; }
+
+    footer{}
+    footer > div{}
 }
 
 @media all and (min-width: 768px){
