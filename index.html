@@ -11,7 +11,7 @@
 <body>
     <div id="body">
         <header include-html="header.html"></header>
-        <section include-html="info.html"></section>
+        <section include-html="info.html" id="content"></section>
         <footer include-html="footer.html"></footer>
     </div>
     <span class="alphabetBg">
@@ -23,8 +23,9 @@
     </span>
 </body>
 <script>
-    
-    includeHTML();
+    console.log('test');
+    console.log('test2');
+    var page = ['info', 'works', 'connect'];
     var Request = function() {  
         this.getParameter = function(name) {  
             var rtnval = '';  
@@ -37,15 +38,28 @@
                     rtnval = parameters[i].split('=')[1];  
                     break;  
                 }  
-            }  
+            }
+            console.log(page.length);
+            for (i = 0; i < page.length; i++){
+                if(rtnval == page[i]){
+                    var scPage = rtnval + '.html';
+                    document.getElementById('content').setAttribute('include-html',scPage);
+                    console.log('같음');
+                    break;
+                }
+            }
+            console.log(parameters);
+            console.log(varName);
+            console.log(rtnval);
             return rtnval;  
         }  
     }  
     var request = new Request();  
+    includeHTML();
 </script>  
   
-<script type="text/javscript">  
-    var paramValue = request.getParameter('parameter_name');
+<script>  
+    var paramValue = request.getParameter('page');
     console.log(paramValue);
 </script>
 </html>
