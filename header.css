@@ -1,0 +1,59 @@
+html, body{width: 100%; background-color: #151515; position: relative; }
+body{overflow-x: hidden; }
+#body{width: 100%; height: 100%; position: relative; z-index: 500; }
+#body *{color: #fff; box-sizing: border-box; line-height: 1.5; word-break: keep-all; }
+
+.hideSpan{width: 0; height: 0; display: inline-block; overflow: hidden; }
+#body header{margin: 0 auto 80px; }
+#body header > div{padding-top: 12px; margin-bottom: 60px; }
+#body header > div > h1{margin: 0 auto 40px; }
+#body header > div > h1 > a{color: #fff; display: block; text-align: center; font-size: 60px; }
+#body header > div > ul{text-align: center; }
+#body header > div > ul > li{display: inline-block; }
+#body header > div > ul > li:nth-of-type(2){margin: 0 24px;}
+#body header > div > ul > li > a{display: block; color: #595959; }
+#body header > div > ul > li.on > a{color: #fff; font-weight: bold; }
+#body header > div > ul > li:hover > a{text-shadow: 0 0 3px 3px rgba(255,255,255,1); }
+#body header > aside{padding: 0 8px; }
+#body header > aside > h2{text-align: center; }
+#body header > aside > h2 > img{min-width: 234px; width: 50%; }
+#body header > aside > h6{color: #acacac; text-align: center; font-size: 12px; word-break: keep-all; }
+
+.alphabetBg{}
+.alphabetBg > span{font-size: 200px; position: absolute; opacity: .03; z-index: 10; color: #fff; }
+.bg1{top: 5%; right: -5%; }
+.bg2{top: 20%; left: 5%; }
+.bg3{top: 45%; left: 45%; }
+.bg4{top: 65%; left: 15%; }
+.bg5{top: 80%; right: 15%; }
+@media all and (min-width: 360px){
+    #body header{margin: 0 auto 120px; }
+    #body header > div{margin-bottom: 80px; }
+    #body header > div > ul > li:nth-of-type(2){margin: 0 36px; }
+    #body header > aside{padding: 0 12px; }
+    #body header > aside > h2 > img{width: 60%; }
+    
+    .alphabetBg > span{font-size: 400px; }
+}
+
+@media all and (min-width: 768px){
+    #body header{max-width: 768px; margin: 0 auto 180px; }
+    #body header > div{padding-top: 16px; margin-bottom: 120px;}
+    #body header > div > h1{margin: 0 auto 60px; }
+    #body header > div > ul > li:nth-of-type(2){margin: 0 120px; }
+    #body header > aside{padding: 0 32px; }
+    #body header > aside > h2 > img{width: auto; }
+    #body header > aside > h6{font-size: 16px; }
+    
+    .alphabetBg > span{font-size: 800px; }
+}
+
+@media all and (min-width: 1280px){
+    #body header{max-width: 1280px; margin: 0 auto 220px; }
+    #body header > div{padding-top: 20px; margin-bottom: 160px; }
+    #body header > div > h1{margin: 0 auto 80px; }
+    #body header > div > ul > li:nth-of-type(2){margin: 0 140px; }
+    #body header > aside{padding: 0; }
+    
+    .alphabetBg > span{font-size: 1000px; }
+}
