@@ -15,15 +15,14 @@
         <footer include-html="footer.html"></footer>
     </div>
     <span class="alphabetBg">
-        <span class="bg1">V</span>
-        <span class="bg2">R</span>
-        <span class="bg3">I</span>
-        <span class="bg4">F</span>
-        <span class="bg5">E</span>
+        <span class="bg1">F</span>
+        <span class="bg2">I</span>
+        <span class="bg3">V</span>
+        <span class="bg4">E</span>
+        <span class="bg5">R</span>
     </span>
 </body>
 <script>
-    var page = ['info', 'works', 'connect'];
     var Request = function() {  
         this.getParameter = function(name) {  
             var rtnval = '';  
@@ -48,11 +47,22 @@
     }  
     var request = new Request();  
     //includeHTML();
-    var test = document.querySelector('#menu');
-    console.log(test);
 </script>  
   
 <script>  
+    var page = ['info', 'works', 'connect'];
     var paramValue = request.getParameter('page');
+    window.onload = function(){
+        for(i=0; i<page.length; i++){
+            if(paramValue == page[i]){
+                var menu = document.getElementById('menu').children[i];
+                console.log(menu);
+                menu.classList.add('on');
+
+                break;
+            }
+        }
+        
+    }
 </script>
 </html>
