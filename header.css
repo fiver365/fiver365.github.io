@@ -11,8 +11,8 @@ body{overflow-x: hidden; }
 #body header > div > h1 > a{color: #fff; display: block; text-align: center; font-size: 60px; }
 #body header > div > ul{text-align: center; }
 #body header > div > ul > li{display: inline-block; }
-#body header > div > ul > li:nth-of-type(2){margin: 0 24px;}
-#body header > div > ul > li > a{display: block; color: #595959; transition: all ease .6s; font-size: 21px; }
+#body header > div > ul > li:nth-of-type(2){margin: 0 12px;}
+#body header > div > ul > li > a{display: block; color: #595959; transition: all ease .6s; font-size: 16px; }
 #body header > div > ul > li.on > a{color: #fff; font-weight: bold; }
 #body header > div > ul > li > a:hover{text-shadow: 0 0 3px rgba(255,255,255,.5); color: #fff; transform: scale(1.08); }
 #body header > aside{padding: 0 8px; }
