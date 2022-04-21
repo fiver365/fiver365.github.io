@@ -21,7 +21,7 @@ body{overflow-x: hidden; }
 #body header > aside > h6{color: #acacac; text-align: center; font-size: 12px; word-break: keep-all; }
 
 .alphabetBg{}
-.alphabetBg > span{font-size: 200px; position: absolute; opacity: .03; z-index: 10; color: #fff; }
+.alphabetBg > span{font-size: 200px; position: absolute; opacity: .03; z-index: 10; color: #fff; font-weight: bold; }
 .bg1{top: 15%; left: 3%; }
 .bg2{bottom: 23%; left: 28%; }
 .bg3{top: 28%; left: 40%; }
@@ -48,7 +48,7 @@ body{overflow-x: hidden; }
     #body header > aside{padding: 0 12px; }
     #body header > aside > h2 > img{width: 60%; }
     
-    .alphabetBg > span{font-size: 400px; }
+    .alphabetBg > span{font-size: 300px; }
 
     footer{}
     footer > div{}
@@ -63,7 +63,7 @@ body{overflow-x: hidden; }
     #body header > aside > h2 > img{width: auto; }
     #body header > aside > h6{font-size: 16px; }
     
-    .alphabetBg > span{font-size: 800px; }
+    .alphabetBg > span{font-size: 500px; }
 }
 
 @media all and (min-width: 1280px){
@@ -73,5 +73,5 @@ body{overflow-x: hidden; }
     #body header > div > ul > li:nth-of-type(2){margin: 0 140px; }
     #body header > aside{padding: 0; }
     
-    .alphabetBg > span{font-size: 1000px; }
+    .alphabetBg > span{font-size: 800px; }
 }
