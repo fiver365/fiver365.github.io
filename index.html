@@ -34,14 +34,15 @@
                 if (varName.toUpperCase() == name.toUpperCase()) {  
                     rtnval = parameters[i].split('=')[1];  
                     break;  
-                }  
+                }
+            }
+            if(rtnval == ''){
+                rtnval = 'info';
             }
             var scPage = rtnval + '.html';
             document.getElementById('content').setAttribute('include-html', scPage);
 
             includeHTML();
-            console.log(varName);
-            console.log(rtnval);
             return rtnval;  
         }  
     }  
